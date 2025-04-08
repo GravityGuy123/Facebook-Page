@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook Front Page</title>
+    <style>
+        *{
+            margin: 0%;
+            padding: 0%;
+        }
+
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgb(246, 247, 251);
+        }
+        
+        .top{
+            height: 55px;
+            background-color: rgb(60, 90, 152);
+        }
+
+        .face{
+            color: white;
+            text-transform: lowercase;
+            font-size: 22px;
+            position: relative;
+            top: 15px;
+            left: 90px;
+        }
+        
+        .login{
+            position: relative;
+            left: 760px;
+            bottom: 15px;
+            font-size: 11px;
+            color: white;
+        }
+
+        .emaillog{
+            position: relative;
+            bottom: 6px;
+        }
+
+        .emaillog input{
+            display: block;
+        }
+
+        .passlog{
+            position: relative;
+            left: 190px;
+            bottom: 37px;
+        }
+
+        .passlog input{
+            display: block;
+        }
+
+        .forgot{
+            position: relative;
+            left: 191px;
+            bottom: 39px;
+        }
+        
+        .login-button{
+            background-color: rgb(17, 48, 109);
+            color: white;
+            position: relative;
+            left: 273px;
+            bottom: 55px;
+            width: 47px;
+            height: 18px;
+            border: none;
+        }
+
+        .leftcontent p{
+            margin-top: 20px;
+            position: relative;
+            left: 100px;
+            font-size: 18px;
+        }
+
+        .leftcontent img{
+            position: relative;
+            left: 100px;
+            width: 600px;
+        }
+
+        .rightcontent{
+            float: right;
+            width: 500px;
+            position: relative;
+            right: 120px;
+            bottom: 270px;
+        }
+
+        .createaccount{
+            font-size: 40px;
+            font-weight: 600;
+            color: rgb(27, 26, 26);
+        }
+
+        .create-p{
+            font-size: 21px;
+            margin-top: 10px;
+        }
+
+        .type input{
+            height: 30px;
+            width: 210px;
+            padding: 5px;
+            border: 1px solid gray;
+            border-radius: 5px;
+            margin-top: 15px;
+        }
+
+        .type :nth-child(3), .type :nth-child(4){
+            width: 435px;
+        }
+
+        .birthday{
+            margin-top: 25px;
+        }
+        
+        .birth{
+            font-size: 20px;
+        }
+
+        .birthday select{
+            height: 35px;
+            width: 100px;
+            display: block;
+        }
+
+        .birthday input{
+            height: 30px;
+            width: 100px;
+            position: relative;
+            bottom: 34px;
+            left: 105px;
+        }
+
+        .gender{
+            position: relative;
+            bottom: 10px;
+        }
+
+        .gender .gender-text{
+            display: block;
+            font-size: 18px;
+        }
+        
+        .gender label{
+            font-size: 18px;
+            
+        }
+
+        .footer p{
+            font-size: 11.9px;
+        }
+
+        .footer button{
+            margin-top: 15px;
+            width: 140px;
+            height: 25px;
+            background-color: rgb(116, 180, 94);
+            color: white;
+            font-weight: bold;
+            border: none;
+            border-radius: 5px;
+        }
+        </style>
+</head>
+<body>
+    <div class="container">
+        <div class="page">
+            <div class="top">
+                <h1 class="face">Facebook</h1>
+                <form action="http://www.facebook.com/login.php" method="get">
+                    <section class="login">
+                        <label class="emaillog" for="emailorphone">Email or Phone
+                        <input type="text" name="emailorphone" id="emailorphone">
+                        </label>
+                        <label class="passlog" for="password">Password
+                        <input type="password" name="password" id="password">
+                        </label>
+                        <span class="forgot">Forgotten account?</span>
+                        <button class="login-button" type="submit">Login</button>
+                    </section>
+                </form>
+            </div>
+            <div class="leftcontent">
+                <p>Facebook helps you connect and share with the <br> people in your life</p>
+                <img src="/Classwork/Images/Facebook-Place.png" alt="People Linked Together">
+            </div>
+            <div class="rightcontent">
+                <h1  class="createaccount">Create an account</h1>
+                <p class="create-p">It's quick and easy.</p>
+                <form action="http://www.facebook.com/login.php" method="get">
+                    <div class="type">
+                        <input type="text" name="firstname" id="firstname" placeholder="First name">
+                        <input type="text" name="surname" id="surname" placeholder="Surname">
+                        <input type="text" name="mobileoremail" id="mobileoremail" placeholder="Mobile number or email address">
+                        <input type="password" name="password" id="newpassword" placeholder="New password">
+                    </div>
+                    <section class="birthday">
+                        <span class="birth" for="birthday">Birthday</span>
+                        <select name="dayofbirth">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8" selected>8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                            <option value="11">11</option>
+                            <option value="12">12</option>
+                            <option value="13">13</option>
+                            <option value="14">14</option>
+                            <option value="15">15</option>
+                            <option value="16">16</option>
+                            <option value="17">17</option>
+                            <option value="18">18</option>
+                            <option value="19">19</option>
+                            <option value="20">20</option>
+                            <option value="21">21</option>
+                            <option value="22">22</option>
+                            <option value="23">23</option>
+                            <option value="24">24</option>
+                            <option value="25">25</option>
+                            <option value="26">26</option>
+                            <option value="27">27</option>
+                            <option value="28">28</option>
+                            <option value="29">29</option>
+                            <option value="30">30</option>
+                            <option value="31">31</option>
+                        </select>
+                        <input type="month" name="month" id="month" required="required">
+                    </section>
+                    <section class="gender">
+                        <label class="gender-text" for="gender">Gender</label>
+                        <label for="gender-for-female">
+                            <input type="radio" name="gender" id="gender-for-female" value="female"> Female
+                        </label>
+                        <label for="gender-for-male">
+                            <input type="radio" name="gender" id="gender-for-male" value="male"> Male
+                        </label>
+                        <label for="custom-gender">
+                            <input type="radio" name="gender" id="custom-gender" value="custom"> Custom
+                        </label>
+                    </section>
+                    <section class="footer">
+                        <p>By clicking Sign Up, you agree to our <span>Terms</span>, <span>Data Policy</span> and <br> <span>Cookie Policy</span>. You may receive SMS notifications from us and <br> can opt out at any time</p>
+                        <button type="submit">Sign Up</button>
+                    </section>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
